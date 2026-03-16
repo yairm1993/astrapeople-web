@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstraPeople - Desarrollo de Talento y Capacitación Interactiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./images/logo astrapeople png.png" alt="AstraPeople" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#herramientas" class="nav-link">Herramientas</a></li>
+                <li><a href="#juegos" class="nav-link">Juegos</a></li>
+                <li><a href="#metricas" class="nav-link">Métricas</a></li>
+                <li><a href="#wall-of-fame" class="nav-link">Wall of Fame</a></li>
+                <li><a href="#talent-strategies" class="nav-link">Talento</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><button class="btn-login" onclick="openLoginModal()">Iniciar Sesión</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Impulsa la <span class="brand-text">digitalización</span> de tu empresa y avanza hacia la 
+                    <span class="highlight">Industria 4.0</span>
+                </h1>
+                <p class="hero-subtitle">
+                    En astraPeople desarrollamos tecnología en dos líneas: <strong>herramientas para la gestión</strong> y 
+                    <strong>juegos interactivos para capacitación</strong>. Integramos medición y analítica para que tu operación 
+                    aprenda, mejore y tome decisiones con datos: todo es medible y puedes ver indicadores en tiempo real. Y si ya 
+                    tienes una idea o un proceso, lo convertimos en una solución digital a la medida.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Medible</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Empresas confían</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Demo Gratuita</button>
+                    <button class="btn-secondary">Ver Herramientas</button>
+                </div>
+            </div>
+            <div class="hero-cards">
+                <div class="floating-cards">
+                    <div class="card-3d">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Análisis en tiempo real</span>
+                    </div>
+                    <div class="card-3d">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Juegos interactivos</span>
+                    </div>
+                    <div class="card-3d">
+                        <i class="fas fa-trophy"></i>
+                        <span>Gamificación</span>
+                    </div>
+                    <div class="card-3d">
+                        <i class="fas fa-users"></i>
+                        <span>Trabajo en equipo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="./images/kpis.png" alt="Mejora de KPIs" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section id="metricas" class="metrics">
+        <div class="container">
+            <h2 class="section-title">Todo es <span class="brand-text">Medible</span></h2>
+            <p class="section-subtitle">
+                Obtén datos precisos para tomar decisiones informadas y medir la efectividad real de tus programas de capacitación
+            </p>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-analytics"></i>
+                    </div>
+                    <h3>KPIs en Tiempo Real</h3>
+                    <p>Monitorea indicadores clave de rendimiento al instante</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Dashboard Interactivo</h3>
+                    <p>Visualización completa del progreso y resultados</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>ROI Medible</h3>
+                    <p>Calcula el retorno de inversión de tus programas</p>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Engagement Cuantificable</h3>
+                    <p>Mide el nivel de participación y motivación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="herramientas" class="tools">
+        <div class="container">
+            <h2 class="section-title">Nuestras <span class="brand-text">Herramientas</span></h2>
+            <div class="tools-intro">
+                <p class="section-subtitle tools-intro-subtitle">
+                    Plataformas digitales para gestionar, medir y mejorar los procesos clave de tu organización
+                </p>
+                <div class="tools-intro-body">
+                    <p>
+                        En astraPeople contamos con plataformas ya desarrolladas que ayudan a las empresas de manufactura a digitalizar, 
+                        estandarizar y medir procesos de RH, capacitación y operación en todos los niveles de la organización: desde 
+                        operación, ingeniería y supervisión, hasta gerencias y dirección.
+                    </p>
+                    <p>
+                        Nuestras herramientas están listas para usarse, son fáciles de adoptar y cuentan con acompañamiento continuo. 
+                        Cuando existe un proceso específico que requiere ajustes o una digitalización adicional, lo analizamos contigo y lo 
+                        llevamos a cabo.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Gestión de Competencias -->
+            <div class="tool-card">
+                <div class="tool-left">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Gestión de Competencias</h3>
+                            <p class="tool-tag">Desarrollo • Evaluación • Seguimiento</p>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p>
+                            Esta herramienta se basa en la <strong>ISO 9001 (Cláusula 7.2 – Competencia)</strong>, que establece la necesidad 
+                            de definir, evaluar y desarrollar las competencias requeridas para cada puesto.
+                        </p>
+                        <p><strong>Flujo de la herramienta:</strong></p>
+                        <ol class="tool-flow">
+                            <li>El requisitor define la necesidad del puesto con base en la descripción de puesto.</li>
+                            <li>Se establecen las competencias requeridas y el nivel esperado de cada una.</li>
+                            <li>Durante el reclutamiento, los candidatos son evaluados directamente en la plataforma.</li>
+                            <li>El sistema muestra qué persona se ajusta mejor al perfil definido.</li>
+                            <li>Una vez seleccionado, se genera un plan de desarrollo para cerrar brechas de competencia.</li>
+                        </ol>
+                        <div class="tool-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+85%</span>
+                                <span class="metric-label">Mejora en desempeño</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Trazabilidad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-right">
+                    <div class="tool-image">
+                        <img src="./images/gestion.jpg" alt="Gestión de Competencias">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amonestaciones -->
+            <div class="tool-card">
+                <div class="tool-left">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Amonestaciones</h3>
+                            <p class="tool-tag">Registro • Análisis • Planes de Acción</p>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p>
+                            Plataforma integral para registrar y gestionar amonestaciones con análisis predictivo. 
+                            Descubre mediante dashboard interactivo qué KPI es el más afectado o qué área necesita atención 
+                            inmediata para establecer planes de acción efectivos.
+                        </p>
+                        <ul class="tool-features">
+                            <li><i class="fas fa-check-circle"></i> Registro digital de incidentes</li>
+                            <li><i class="fas fa-check-circle"></i> Dashboard con KPIs afectados</li>
+                            <li><i class="fas fa-check-circle"></i> Identificación automática de patrones</li>
+                            <li><i class="fas fa-check-circle"></i> Planes de acción correctiva</li>
+                        </ul>
+                        <div class="tool-metrics">
+                            <div class="metric">
+                                <span class="metric-value">-60%</span>
+                                <span class="metric-label">Incidentes recurrentes</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">24/7</span>
+                                <span class="metric-label">Monitoreo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-right">
+                    <div class="tool-image">
+                        <img src="./images/kpis.png" alt="Amonestaciones">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ideas de Mejora -->
+            <div class="tool-card">
+                <div class="tool-left">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Kaizen Hub</h3>
+                            <p class="tool-tag">Mejora Continua • Puntos • Reconocimiento</p>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p>
+                            Plataforma para capturar, evaluar y ejecutar ideas de mejora con trazabilidad completa hasta su implementación. 
+                            Incluye <strong>sistema de puntos</strong>, opción de <strong>premiar</strong> iniciativas y <strong>descargar 
+                            reconocimientos</strong> para fortalecer la cultura de mejora continua, con paneles para <strong>originador</strong>, 
+                            <strong>implementador</strong> y <strong>comité evaluador</strong>.
+                        </p>
+                        <ul class="tool-features">
+                            <li><i class="fas fa-check-circle"></i> Registro y evaluación de ideas con estatus y responsables</li>
+                            <li><i class="fas fa-check-circle"></i> Paneles por rol: originador, implementador y comité evaluador</li>
+                            <li><i class="fas fa-check-circle"></i> Sistema de puntos, premios y reconocimientos descargables</li>
+                            <li><i class="fas fa-check-circle"></i> Metodologías integradas: 8D, ciclo PDCA, 5 Porqués, Ishikawa y más</li>
+                            <li><i class="fas fa-check-circle"></i> ROI y ahorro por idea implementada</li>
+                        </ul>
+                        <div class="tool-metrics">
+                            <div class="metric">
+                                <span class="metric-value">$2.5M</span>
+                                <span class="metric-label">Ahorro promedio anual</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">300+</span>
+                                <span class="metric-label">Ideas implementadas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-right">
+                    <div class="tool-image">
+                        <img src="./images/ideas de mejora.png" alt="Kaizen Hub">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrega de Premios -->
+            <div class="tool-card">
+                <div class="tool-left">
+                    <div class="tool-header">
+                        <div class="tool-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="tool-info">
+                            <h3>Entrega de Premios</h3>
+                            <p class="tool-tag">Reconocimiento • Motivación • Gestión</p>
+                        </div>
+                    </div>
+                    <div class="tool-content">
+                        <p>
+                            Sistema completo para conocer y registrar a quienes les entregarás obsequios y reconocimientos. 
+                            Gestiona programas de incentivos, controla presupuestos y mide el impacto en la motivación 
+                            y rendimiento del equipo.
+                        </p>
+                        <ul class="tool-features">
+                            <li><i class="fas fa-check-circle"></i> Catálogo de premios y reconocimientos</li>
+                            <li><i class="fas fa-check-circle"></i> Gestión de presupuestos</li>
+                            <li><i class="fas fa-check-circle"></i> Entrega digital de reconocimientos</li>
+                            <li><i class="fas fa-check-circle"></i> Análisis de impacto en motivación</li>
+                        </ul>
+                        <div class="tool-metrics">
+                            <div class="metric">
+                                <span class="metric-value">+45%</span>
+                                <span class="metric-label">Motivación del equipo</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">95%</span>
+                                <span class="metric-label">Satisfacción</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-right">
+                    <div class="tool-image">
+                        <img src="./images/registro de obsequios.png" alt="Entrega de Premios">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="juegos" class="games">
+        <div class="container">
+            <h2 class="section-title">Juegos <span class="brand-text">Interactivos</span></h2>
+            <p class="section-subtitle">
+                Aprende de forma divertida con nuestros juegos basados en programas de televisión adaptados para capacitación empresarial
+            </p>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="./images/100.jpg" alt="100 Compañeros Dijeron">
+                    </div>
+                    <div class="game-content">
+                        <h3>100 Compañeros Dijeron</h3>
+                        <p>El famoso juego de encuestas adaptado para seguridad industrial y calidad. Fomenta el trabajo en equipo mientras se aprenden mejores prácticas.</p>
+                        <ul class="game-topics">
+                            <li>Seguridad Industrial</li>
+                            <li>Calidad y Procesos</li>
+                            <li>Cultura Organizacional</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <div class="game-content">
+                        <h3>El Rival Más Fuerte</h3>
+                        <p>Competencias amistosas entre equipos para reforzar conocimientos críticos. Ideal para capacitaciones técnicas y de procedimientos.</p>
+                        <ul class="game-topics">
+                            <li>Procedimientos Operativos</li>
+                            <li>Normatividad</li>
+                            <li>Habilidades Técnicas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <div class="game-content">
+                        <h3>Ruleta del Conocimiento</h3>
+                        <p>Aprende sobre temas específicos mientras giras la ruleta de los desafíos. Perfecto para reforzar概念 clave de forma dinámica.</p>
+                        <ul class="game-topics">
+                            <li>Productos y Servicios</li>
+                            <li>Políticas Internas</li>
+                            <li>Innovación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wall of Fame Section -->
+    <section id="wall-of-fame" class="wall-of-fame">
+        <div class="container">
+            <h2 class="section-title">Wall of Fame - <span class="brand-text">Muro de la Fama</span></h2>
+            <p class="section-subtitle">
+                Programa completo de Reconocimientos y Recompensas para celebrar el talento excepcional y fomentar una cultura de excelencia
+            </p>
+            <div class="wall-content">
+                <div class="wall-image">
+                    <img src="./images/muro de la fama.png" alt="Wall of Fame">
+                </div>
+                <div class="wall-features">
+                    <h3>Programa Integral de Reconocimiento</h3>
+                    <p>
+                        Creamos tu Wall of Fame personalizado para destacar y celebrar los logros más importantes de tu equipo. 
+                        Un sistema visual y motivador que impulsa el rendimiento y fortalece la cultura organizacional.
+                    </p>
+                    <ul class="wall-list">
+                        <li><i class="fas fa-star"></i> Reconocimiento público de logros excepcionales</li>
+                        <li><i class="fas fa-medal"></i> Sistema de niveles y categorías de premios</li>
+                        <li><i class="fas fa-camera"></i> Galería fotográfica de momentos destacados</li>
+                        <li><i class="fas fa-chart-bar"></i> Métricas de impacto y participación</li>
+                        <li><i class="fas fa-share-alt"></i> Integración con redes sociales internas</li>
+                        <li><i class="fas fa-history"></i> Histórico de reconocimientos y evolución</li>
+                    </ul>
+                    <div class="wall-metrics">
+                        <div class="wall-stat">
+                            <span class="stat-number">+70%</span>
+                            <span class="stat-label">Motivación del personal</span>
+                        </div>
+                        <div class="wall-stat">
+                            <span class="stat-number">-40%</span>
+                            <span class="stat-label">Rotación de talento clave</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent Strategies Section -->
+    <section id="talent-strategies" class="talent-strategies">
+        <div class="container">
+            <h2 class="section-title">Estrategias de <span class="brand-text">Atracción y Retención</span></h2>
+            <p class="section-subtitle">
+                Sistema integral que reduce el ausentismo, minimiza la rotación y aumenta la satisfacción del empleado
+            </p>
+            <div class="strategies-grid">
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Reclutamiento Estratégico</h3>
+                    <p>
+                        Proceso completo desde la atracción de talento hasta la selección efectiva. 
+                        Identificamos candidatos ideales que se alineen con tu cultura organizacional.
+                    </p>
+                    <ul class="strategy-features">
+                        <li>Perfiles de competencias definidos</li>
+                        <li>Procesos de selección optimizados</li>
+                        <li>Integración sistemática</li>
+                    </ul>
+                </div>
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mantenimiento de Satisfacción</h3>
+                    <p>
+                        Herramientas continuas para mantener altos niveles de satisfacción y compromiso 
+                        de los empleados a lo largo de su trayectoria profesional.
+                    </p>
+                    <ul class="strategy-features">
+                        <li>Encuestas de clima laboral</li>
+                        <li>Planes de desarrollo personalizados</li>
+                        <li>Programas de bienestar</li>
+                    </ul>
+                </div>
+                <div class="strategy-card">
+                    <div class="strategy-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Análisis de Rotación</h3>
+                    <p>
+                        Sistema avanzado para identificar por qué y cuándo la gente se va, 
+                        permitiéndonos establecer estrategias proactivas para evitar la pérdida de talento.
+                    </p>
+                    <ul class="strategy-features">
+                        <li>Identificación de patrones de salida</li>
+                        <li>Análisis predictivo de riesgo</li>
+                        <li>Planes de retención personalizados</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="strategies-impact">
+                <h3>Impacto Medible en tu Organización</h3>
+                <div class="impact-stats">
+                    <div class="impact-stat">
+                        <span class="impact-number">-60%</span>
+                        <span class="impact-label">Ausentismo</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-number">-45%</span>
+                        <span class="impact-label">Rotación</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-number">+80%</span>
+                        <span class="impact-label">Satisfacción</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-number">+35%</span>
+                        <span class="impact-label">Productividad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Comienza a <span class="brand-text">Transformar</span> tu Equipo</h2>
+            <p class="section-subtitle">
+                Contáctanos para una demo personalizada y descubre cómo podemos ayudarte a alcanzar tus objetivos
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contacto@astrapeople.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+52 (55) 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lunes - Viernes: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Empresa">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="">Selecciona una herramienta</option>
+                                <option value="competencias">Gestión de Competencias</option>
+                                <option value="amonestaciones">Amonestaciones</option>
+                                <option value="ideas">Ideas de Mejora</option>
+                                <option value="premios">Entrega de Premios</option>
+                                <option value="juegos">Juegos Interactivos</option>
+                                <option value="todos">Todas las herramientas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Solicitar Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="./images/logo astrapeople png.png" alt="AstraPeople" class="footer-logo">
+                    <p>Desarrollo de talento con tecnología y medición de resultados</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Herramientas</h4>
+                    <ul>
+                        <li><a href="#herramientas">Gestión de Competencias</a></li>
+                        <li><a href="#herramientas">Amonestaciones</a></li>
+                        <li><a href="#herramientas">Ideas de Mejora</a></li>
+                        <li><a href="#herramientas">Entrega de Premios</a></li>
+                        <li><a href="#wall-of-fame">Wall of Fame</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#juegos">Juegos Interactivos</a></li>
+                        <li><a href="#metricas">Análisis y Métricas</a></li>
+                        <li><a href="#wall-of-fame">Wall of Fame</a></li>
+                        <li><a href="#talent-strategies">Estrategias de Talento</a></li>
+                        <li><a href="#contacto">Consultoría</a></li>
+                        <li><a href="#contacto">Soporte Técnico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#inicio">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Casos de Éxito</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AstraPeople. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Iniciar Sesión</h2>
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@empresa.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+                    <div class="form-options">
+                        <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
