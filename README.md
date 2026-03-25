@@ -1,6 +1,6 @@
-# AstraPeople - Web corporativa
+# astraPeople - Web corporativa
 
-Este repositorio contiene el sitio web corporativo de **AstraPeople**.
+Este repositorio contiene el sitio web corporativo de **astraPeople**.
 
 ## Tecnologías
 

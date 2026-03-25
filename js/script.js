@@ -355,7 +355,7 @@ window.addEventListener('scroll', () => {
 const footerYear = document.querySelector('.footer-bottom p');
 if (footerYear) {
     const currentYear = new Date().getFullYear();
-    footerYear.innerHTML = `&copy; ${currentYear} AstraPeople. Todos los derechos reservados.`;
+    footerYear.innerHTML = `&copy; ${currentYear} astraPeople. Todos los derechos reservados.`;
 }
 
 // Tool Filter (for future expansion)
